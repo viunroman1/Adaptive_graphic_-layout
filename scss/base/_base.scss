@@ -1,0 +1,25 @@
+
+
+html {
+    box-sizing: border-box;
+    /* pading+border+content Точні розміри */
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+body {
+    background-color: #FFFFFF;
+    color: $primary-text-color;
+    font-family: Roboto, sans-serif;
+}
+
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
