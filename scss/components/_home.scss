@@ -5,7 +5,6 @@
     margin-top: 0px;
     margin-bottom: 94px;
 
-
     &__title {
     color: $title-text-color;
     width: 1200px;
@@ -50,4 +49,9 @@
     color: $background;
     }
 
+          @media screen and(max-width:1199px) {
+            display: none;
+          }
+    
+         
 }

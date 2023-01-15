@@ -13,6 +13,19 @@
     padding-top: 200px;
     padding-bottom: 200px;
 
+
+    // @media screen and (max-width: 480px) {
+           
+    //     }
+    // @media (min-device-pixel-ratio: 2),
+    // (min-resolution: 192dpi),
+    // (min-resolution: 2dppx) {
+    // background-image:url('/images/mobile/moboleheader@2x.jpg');
+    // }
+
+
+
+
     &__title {
     color: $background;
     font-weight: 900;
@@ -30,5 +43,31 @@
     }
 }
 
+
+  @media (min-width: 767px) and (min-width: 1199px){
+    .hero{
+        background-image: url(/images/tablet/tabletheader.jpg)
+    }
+
+    @media (min-resolution: 2dppx) {
+        .hero{
+            background-image: url(/images/tablet/tabletheader@2x.jpg);
+        }
+    }
+  }
+
+   @media (min-width: 320px) and (max-width: 767px) {
+       .hero {
+           background-image: url(/images/mobile/mobileheader.jpg)
+       }
+
+       @media (min-resolution: 2dppx) {
+           .hero {
+               background-image: url(/images/mobile/moboleheader@2x.jpg);
+           }
+       }
+}
+
+   
 
 
