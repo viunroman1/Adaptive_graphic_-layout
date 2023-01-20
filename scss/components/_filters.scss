@@ -1,0 +1,11 @@
+.filters {
+    margin-top: 0;
+    margin-bottom: 50px;
+
+    &__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 8px;
+}
+}

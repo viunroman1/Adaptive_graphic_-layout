@@ -1,98 +1,30 @@
-    // UTILS
+    //  Utils
+// @import"./utils/fonts";
 @import "./utils/variables";
-@import "./utils/fonts";
+@import "./utils/visually-hidden";
+@import "./utils/img";
 
-   
-    // base
-@import "./base/base";
-@import "./base/reset";
+        // Base
+@import"./base/base";
+@import"./base/reset";
 
+// Layout
+@import "./layout/container";
+@import "./layout/header";
+@import "./layout/section";
+@import "./layout/footer";
 
- // Components
- @import "./components/benefits";
- @import "./components/button";
- @import "./components/client";
- @import "./components/container";
- @import "./components/footer";
- @import "./components/header";
- @import "./components/hero";
- @import "./components/home";
- @import "./components/logo";
- @import "./components/modal";
- @import "./components/portfolio-filtres";
- @import "./components/portfolio-project";
-//  @import "./components/subscription";
- @import "./components/team";
-
-
-
-
+        // Components
+@import "./components/buttons";
+@import "./components/logo";
+@import "./components/hero";
+@import "./components/section-feature";
+@import "./components/section-work";
+@import "./components/section-team";
+@import "./components/section-clients";
+@import "./components/modal-window";
+@import "./components/filters";
+@import "./components/section-project";
+@import "./components/socials";
 
 
-
- 
-  /* приєднуйтесь */
- // .join {
- //     display: flex;
- //     flex-direction: column;
- //     margin-left: 70px;
-
- //     @media screen and (min-width: 768px) and (max-width:1199px) {
- //         flex-wrap: wrap;
-
-
- //     }
-
- //     @media screen and (max-width: 767px) {
- //         flex-wrap: wrap;
-
- //     }
-
- //     @media screen and (min-width: 480px) {
- //         flex-wrap: wrap;
- //         padding: 60px;
- //     }
-
- //     &__title {
- //         text-transform: uppercase;
- //         text-align: center;
- //         color: $background;
- //         margin-bottom: 20px;
- //         margin-right: 70px;
- //         font-weight: 700;
- //         font-size: 14px;
- //         line-height: 1.14px;
- //         letter-spacing: 0.03em;
-
-
- //     }
-
- //     &__list {
- //         display: flex;
- //         justify-content: center;
- //         gap: 10px;
- //         padding-left: 0;
- //         padding-right: 0;
- //         margin-top: 20px;
- //     }
-
- //     &__link {
- //         display: flex;
- //         background-position: center;
- //         content: "";
-
- //         width: 40px;
- //         height: 40px;
-
- //         border-radius: 50%;
- //         padding: 12px 12px;
- //         fill: $background;
- //         background-color: rgba(255, 255, 255, 0.1);
- //     }
-
- //     &__link:focus,
- //     &__link:hover {
- //         background-color: $accent-color;
- //         fill: $background;
- //     }
- // }

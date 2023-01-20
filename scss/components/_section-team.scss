@@ -1,0 +1,94 @@
+.team {
+    background-color: $background-color-secondary;
+
+    &__title {
+    color: $color-title;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+    letter-spacing: 0.03em;
+    margin-top: 0;
+    margin-bottom: 50px;
+
+        @media screen and (min-width:480px) and (max-width: 1199px) {
+            font-size: 28px;
+            line-height: 1.18;
+            margin-bottom: 30px;
+        }
+}
+
+    &__list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+
+    @media screen and (max-width: 767px) {
+            display: block;
+        }
+}
+}
+
+.employee {
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 
+    0px 1px 1px rgba(0, 0, 0, 0.14), 
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+    background-color: $white;
+
+
+   
+    &:not(:last-child) {
+        @media screen and (max-width: 767px) {
+            margin-bottom: 30px;
+        }
+    }
+    
+    &__card {
+    width: 270px; 
+    
+    @media screen and (min-width:480px) and (max-width: 767px) {
+            width: 450px;
+        }
+    @media screen and (min-width:768px) and (max-width: 1199px) {
+            width: 354px;
+    }
+}
+
+    // &__picture {
+    //     margin-bottom: 30px;
+    // }
+
+    &__info {
+    padding-top: 30px;
+    padding-bottom: 30px;
+
+    @media screen and (min-width:480px) and (max-width: 1199px) {
+        padding-top: 30px;
+        padding-bottom: 24px;
+    }
+
+}
+
+    &__name {
+    color:$color-title;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.2;
+    text-align: center;
+    letter-spacing: 0.03em;
+    margin-bottom: 10px;
+    margin-top: 0;
+}
+
+    &__profession {
+    margin-bottom: 16px;
+    font-size: 16px;
+    line-height: 1.2;
+    text-align: center;
+    letter-spacing: 0.03em;
+}
+}
+
+
+

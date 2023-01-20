@@ -1,0 +1,228 @@
+.backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color:$color-backdrop;
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.backdrop.is-hidden {
+    opacity: 0;
+    pointer-events: none;
+    visibility: hidden;
+}
+
+.modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 528px;
+    background-color: $color-modal;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
+     0px 1px 1px rgba(0, 0, 0, 0.14), 
+     0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+
+    @media screen and (min-width: 480px) and (max-width:1119px) {
+        width: 450px;
+    }
+
+    &__button {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+}
+}
+
+.button__icon {
+    width: 100%;
+    height: 100%;
+    fill: $logo-black;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+    fill: $accent;
+}
+}
+
+.form {
+    padding: 40px;
+    width: 528px;
+    display: block;
+
+    @media screen and (min-width: 480px) and (max-width:1119px) {
+        width: 450px;
+    }
+
+    &__title {
+    margin-bottom: 12px;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.15;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: $color-title;
+
+    @media screen and (min-width: 480px) and (max-width:1119px) {
+        width: 370px;
+    }
+}
+}
+
+.form-field__modal {
+    margin-bottom: 10px;
+}
+
+.form-field__label {
+    margin-bottom: 4px;
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.01em;
+    color: $primary-text-color;
+}
+
+.form-field__position {
+    position: relative;
+    margin-top: 4px;
+}
+
+.form-field__icon {
+    position: absolute;
+    top: 50%;
+    left: 15px;
+    transform: translateY(-50%);
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.form-field__input:focus ~ .form-field__icon,
+.form-field__input:hover ~ .form-field__icon {
+    fill: $accent;
+}
+
+.form-field__input {
+    display: inline-block;
+    height: 40px;
+    width: 100%;
+    padding: 11px 42px;
+    margin: 0;  
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;  
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.form-field__input:hover,
+.form-field__input:focus {
+    border-color: $accent;
+}
+
+.textarea {
+    margin-bottom: 20px;
+    margin-top: 10px;
+
+    &__name {
+    margin-bottom: 4px;
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.01em;
+    color: $primary-text-color;
+}
+
+    &__placeholder {
+    width: 100%;
+    height: 120px;
+    padding: 12px 16px;
+    resize: none;
+    border: 1px solid $color-border-input-modal;
+    border-radius: 4px;
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+    &__placeholder:hover,
+    &__placeholder:focus {
+    border-color: $accent;
+}
+}
+
+
+.checkbox {
+    margin-bottom: 30px;
+
+    &__label {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+    &__input {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+    width: 16px;
+    height: 15px;
+}
+
+    &__icon {
+    display: inline-block;
+    width: 16px;
+    height: 15px;
+    margin-right: 7px;
+    border-radius: 2px;
+    border: 2px solid  $color-title;
+    background-color: $white;
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+    &__icon:hover,
+    &__icon:focus {
+    border-color: $accent;
+}
+
+    &__link {   
+    margin-left: 5px;
+    font-size: 14px;
+    line-height: 1.7;
+    letter-spacing: 0.03em;
+    color: $accent;
+
+    @media screen and (min-width: 480px) and (max-width:1119px) {
+        font-size: 12px;
+        line-height: 1.17;
+    }
+}
+
+    &__label {
+    font-size: 14px;
+    line-height: 1.7;
+    letter-spacing: 0.03em;
+    color: $primary-text-color;
+
+    @media screen and (min-width: 480px) and (max-width:1119px) {
+        font-size: 12px;
+        line-height: 1.17;
+    }
+}
+}
+
+.checkbox__input:checked + .checkbox__icon {
+    border-color: transparent;
+    background-color: $accent;
+    background-image: url(../images/icon-check.svg);
+    background-size: contain;
+    background-origin: border-box;
+    background-repeat: no-repeat;
+}
+
+.flex-button {
+    display: flex;
+    justify-content: center;
+}
